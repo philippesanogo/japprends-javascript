@@ -15,3 +15,7 @@ console.log(stylo);
 console.log('');
 
 
+// recuperer la valeur de la couleur de l'object stylo
+console.log("recuperer la valeur de la couleur de l'object stylo:");
+console.log(stylo.couleur);
+
