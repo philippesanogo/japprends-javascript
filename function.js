@@ -4,7 +4,7 @@ Appel de la fonction dire bonjour:`);
 console.log("");
 
 const greeting = function () {
-	console.log("Hello World!");
+	console.log("- Hello World!");
 };
 
 // Appel de la fonction dire bonjour
@@ -19,7 +19,7 @@ console.log('');
 console.log("Definir une fonction fléchée et l'afficher dans la console:");
 
 const introduce = () => {
-	console.log("Hi, my name is Hello");
+	console.log("- Hi, my name is Hello");
 };
 
 introduce();
@@ -28,18 +28,32 @@ introduce();
 // Definir une fonction fléchée intitulée: sayHello
 
 const sayHello = () => {
-	console.log("Hello World!");
+	console.log("- Hello World!");
 };
 
 sayHello();
+console.log("");
 
 
 // Definir la fonction fléchée intitulée: sayGoodBye
-
+console.log("Definir la fonction fléchée intitulée: sayGoodBye:");
 const sayGoodBye = () => {
-	console.log("Good Bye Good Boy!");
+	console.log("- Good Bye Good Boy!");
 };
 
 // Affiche la fonction sayGoodBye
 console.log("");
 sayGoodBye();
+console.log("");
+
+// Utiliser un argument dans la fonction sayGoodBye
+
+console.log("Utiliser un argument dans la fonction sayGoodBye:");
+const sayGoodBye2 = (name) => {
+	console.log(`- Good Bye ${name}`);
+};
+
+// Appeler le fonction sayGoodBye2
+
+sayGoodBye2("Tinem");
+sayGoodBye2("Tydru");
