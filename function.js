@@ -57,3 +57,17 @@ const sayGoodBye2 = (name) => {
 
 sayGoodBye2("Tinem");
 sayGoodBye2("Tydru");
+
+console.log("");
+console.log("Utiliser plusieurs arguments dans la fonction introduce2:");
+// Utiliser plusieurs arguments dans la fonction introduce2
+
+const introduce2 = (name, age) => {
+	console.log(`Je m'appelle ${name}`);
+	console.log(`J'ai ${age} ans.`);
+};
+
+// Appel de la fonction
+
+introduce2("Tinem", 47);
+
