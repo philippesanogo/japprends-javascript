@@ -32,3 +32,14 @@ const sayHello = () => {
 };
 
 sayHello();
+
+
+// Definir la fonction fléchée intitulée: sayGoodBye
+
+const sayGoodBye = () => {
+	console.log("Good Bye Good Boy!");
+};
+
+// Affiche la fonction sayGoodBye
+console.log("");
+sayGoodBye();
