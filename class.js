@@ -40,18 +40,36 @@ console.log("");
 
 
 // Utilisation de this dans constructor
-const prefixe = "Ma future maison aura";
+const phrase = "Ma future maison aura";
 class MaisonType {
-    constructor () {
-        this.pieces = 5;
-        this.fenetres = 4;
-        this.portes = 6;
+    constructor (pieces, fenetres, portes) {
+        this.pieces = pieces;
+        this.fenetres = fenetres;
+        this.portes = portes;
     }
 }
 
-const maison = new MaisonType();
-console.log(`${prefixe} ${maison.pieces} pièces`);
-console.log(`${prefixe} ${maison.fenetres} fenêtres`);
-console.log(`${prefixe} ${maison.portes} portes`);
+const maison = new MaisonType(7, 18, 4);
+console.log(`${phrase} ${maison.pieces} pièces`);
+console.log(`${phrase} ${maison.fenetres} fenêtres`);
+console.log(`${phrase} ${maison.portes} portes`);
+// Fin
 
+
+console.log('');
+
+// un autre exemple
+class Velo {
+    constructor (marque, type, prix) {
+        this.marque = marque;
+        this.type = type;
+        this.prix = prix;
+    }
+}
+
+const velo1 = new Velo("Mitsubishi", "MountainBike", 500);
+
+console.log("Marque: " + velo1.marque);
+console.log("Type: " + velo1.type);
+console.log("Prix: " + velo1.prix);
 
