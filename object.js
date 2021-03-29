@@ -27,13 +27,28 @@ console.log('');
 stylo.style = "bille";
 console.log(stylo);
 console.log("");
+
 // Creer un objet user et l'afficher dans la console
 console.log("Creer un objet user et l'afficher dans la console:");
 const user = {
-	name: "Ken the ninja",
+	name: "- Ken the ninja",
 	age: 35
 };
 console.log("objet user:");
 console.log(user.name);
-console.log(user.age);
+console.log("- " + user.age);
+console.log("");
 
+
+// Objet et fonction
+// Creer un objet dont la valeur de la propriété est une fonction et Affiche dans la console la valeur
+
+console.log("Creer un objet dont la valeur de la propriété est une fonction et Affiche dans la console la valeur:");
+
+const constantName = {
+	propertyName: () => {
+		console.log("- SALUT");
+	}
+};
+
+constantName.propertyName();
