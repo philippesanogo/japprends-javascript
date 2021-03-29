@@ -52,3 +52,28 @@ const constantName = {
 };
 
 constantName.propertyName();
+console.log("");
+
+
+// Creer un objet "user" avec 2 propriétés dont un des 2 est une fonction et affiche dans la console
+console.log("Creer un objet 'user' avec 2 propriétés dont un des 2 est une fonction et affiche dans la console:");
+
+const user2 = {
+	name: "Ken the ninja",
+	sayHello: (param1) => {
+		console.log(`Hello ${param1}`);
+	}
+};
+
+user2.sayHello(user2.name);
+
+// autre exemple
+
+const user3 = {
+	name: "Master Wooly",
+	sayHello: (param1) => {
+		console.log(`hello ${param1}`);
+	}
+};
+
+user3.sayHello(user3.name);
