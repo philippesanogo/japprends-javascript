@@ -47,6 +47,14 @@ console.log("EXO 3:");
  * EXO 5: ajoute la METHOD rouler dans le CONSTRUCTOR
  */
 
+/**
+ * EXO 6: Utilisation de valeurs dans les méthodes
+ */
+
+/**
+ * EXO 7: Utilisation de méthodes dans les méthodes
+ */
+
 class Car {
     constructor (name, typeOfEngine) {
         this.name = name;
@@ -54,7 +62,17 @@ class Car {
     }
 
     drive () {
-        console.log("roule vite");
+        console.log("La voiture de marque " + this.name + " roule vite");
+    }
+
+    brake () {
+        this.drive();
+        console.log("La " + this.name + " freine bien.");
+        this.adhere();
+    }
+
+    adhere () {
+        console.log("La " + this.name + " adhere bien à la route");
     }
 }
 
@@ -70,8 +88,21 @@ console.log(`Marque: ${merco.name}`);
 console.log(`Moteur: ${merco.typeOfEngine}`);
 
 console.log("");
+
 console.log("EXO 5:");
 const renault = new Car("espace", "Diesel");
 console.log("Marque: " + renault.name);
 console.log("Moteur: " + renault.typeOfEngine);
-renault.drive();
+
+console.log("");
+console.log("EXO 6:");
+const peugeot = new Car("Peugeot", "Diesel");
+console.log(`Marque: ${peugeot.name}`);
+console.log(`Moteur: ${peugeot.typeOfEngine}`);
+
+console.log("");
+
+console.log("EXO 7:");
+const citroen = new Car("Citroen", "Diesel");
+citroen.brake();
+
