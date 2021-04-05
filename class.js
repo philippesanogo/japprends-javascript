@@ -1,7 +1,7 @@
 // Definir la classe User et Affiche une instance vide de la classe dans la console
 console.log("Definir la classe User et Affiche une instance vide de la classe dans la console:");
 
-class User {}   
+class User { }
 const user = new User();
 console.log(user);
 // Fin
@@ -10,7 +10,7 @@ console.log(user);
 console.log("");
 
 // Definir la classe Animal
-class Animal {}
+class Animal { }
 // Definir une instance de Animal en l'assignant dans un const
 console.log("Definir une instance de Animal en l'assignant dans un const:");
 const animal = new Animal();
@@ -25,7 +25,7 @@ console.log("");
 // constructor
 console.log("constructor:");
 class Voiture {
-    constructor () {
+    constructor() {
         console.log(`Voiture`);
     }
 }
@@ -42,7 +42,7 @@ console.log("");
 // Utilisation de this dans constructor
 const prefixe = "Ma future maison aura";
 class MaisonType {
-    constructor () {
+    constructor() {
         this.pieces = 5;
         this.fenetres = 4;
         this.portes = 6;
