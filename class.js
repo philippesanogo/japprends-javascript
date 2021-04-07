@@ -54,3 +54,4 @@ console.log(`${prefixe} ${maison.pieces} pièces`);
 console.log(`${prefixe} ${maison.fenetres} fenêtres`);
 console.log(`${prefixe} ${maison.portes} portes`);
 
+
