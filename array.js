@@ -28,3 +28,33 @@ for (let i = 0; i < prenoms.length; i++) {
 		console.log(prenoms[i]);
 	}
 }
+
+console.log("");
+
+// Créer un array intitulé friends
+console.log("Créer un array intitulé friends:");
+
+const friends = [["Justine", 24, "fille"], ["Pierre", 31, "garçon"]];
+
+// Affiche array friends
+console.log("Affiche array friends:");
+console.log(friends);
+
+// Accéder à 24 et "pierre"
+console.log("Accéder à 24 et pierre");
+console.log(friends[0][1]);
+console.log(friends[1][0]);
+
+// Remplacer 24 et 31 par 7 et 47
+console.log("Remplacer 24 et 31 par 7 et 47:");
+
+friends[0][1] = 7;
+friends[1][1] = 47;
+
+// Affiche array friends
+console.log("Affiche array friends:");
+console.log(friends);
+
+// Affiche âge de justine et pierre
+console.log("Affiche âge de justine et pierre:");
+console.log(friends[0][1] + " et " + friends[1][1] + " ans.");

@@ -1,27 +1,63 @@
-// Definir une la fonction: dire bonjour
-console.log(`Definir la fonction: dire bonjour
-Appel de la fonction dire bonjour:`);
+/**
+ * Introduction aux fonctions
+ */
+
+// Declarer une fonction basique: direBonjour et Affiche dans la console
+function direBonjour() {
+	console.log("Bonjour à tous!");
+}
+direBonjour();
+
+console.log("");
+
+// Definir la fonction: greeting
+console.log(`Declarer une fonction basique: greeting et assigner la fonction à une constante et Affiche dans la console`);
+
 console.log("");
 
 const greeting = function () {
 	console.log("- Hello World!");
 };
-
-// Appel de la fonction dire bonjour
 greeting();
 
 
 console.log('');
 
+// Declarer une fonction avec parametres et Affiche dans la console
+console.log("Declarer une fonction avec parametres et Affiche dans la console:");
+const sayGoodNight = function (param1) {
+	console.log("Good night " + param1 + ".");
+};
+sayGoodNight("philippe");
+
+console.log("");
+
+
+// Utilisation de RETURN dans une fonction
+console.log("Créer une fonction ADDITION avec une valeur de retour et AFFICHE dans la console: ");
+
+const add = (param1) => {
+	return 5 + param1;
+};
+const result = add(20);
+console.log(result);
+
+
+console.log("");
+
+
+
+
+
+
+
 
 // Definir une fonction fléchée et l'afficher dans la console 
-
 console.log("Definir une fonction fléchée et l'afficher dans la console:");
 
 const introduce = () => {
 	console.log("- Hi, my name is Hello");
 };
-
 introduce();
 
 
@@ -30,8 +66,9 @@ introduce();
 const sayHello = () => {
 	console.log("- Hello World!");
 };
-
 sayHello();
+
+
 console.log("");
 
 
