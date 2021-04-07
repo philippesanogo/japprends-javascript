@@ -29,12 +29,14 @@ console.log("NOM: " + cafe.name);
 console.log("Ouverture: " + cafe.businessHours.opening);
 console.log("Fermeture: " + cafe.businessHours.closing);
 
+
+
 console.log(`----------------------------`);
+
 console.log("Au menu:");
 for (let i = 0; i < cafe.menus.length; i++) {
 	console.log(cafe.menus[i]);
 }
-
 
 
 
